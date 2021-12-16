@@ -336,6 +336,15 @@ h3:last-of-type {
 /* Flex columns */
 .flex-columns.flex-reverse .row {
   flex-direction: row-reverse;
+
+  // .btn {
+  //   @include for-desktop {
+  //     text-align: right;
+  //   }
+  // }
+  // @include for-desktop {
+  //   text-align: right;
+  // }
 }
 .flex-columns .row {
   display: flex;
