@@ -501,25 +501,61 @@ h3:last-of-type {
 
 .video__section {
   background-color: $light_pink;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 50px;
+
+  @include for-phone {
+    padding-top: 60px;
+    padding-bottom: 25px;
+  }
+  @include for-tablet {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    gap: 40px;
+  }
+  @include for-desktop {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    gap: 40px;
+  }
 
   h4 {
     font-family: $family-primary;
     color: #fff;
     @include for-phone {
       font-size: 20px;
-      line-height: 30px;
+      line-height: 50px;
+      padding-bottom: 30px;
+      padding-top: 10px;
     }
     @include for-tablet {
       font-size: 20px;
-      line-height: 30px;
+      line-height: 50px;
+      padding-bottom: 30px;
+      padding-top: 20px;
     }
     @include for-desktop {
       font-size: 20px;
       line-height: 30px;
+      padding-bottom: 30px;
+      padding-top: 25px;
     }
   }
 }
 
+.video_wrapper {
+  width: calc(33%-10px);
+
+  @include for-phone {
+  }
+  @include for-tablet {
+  }
+  @include for-desktop {
+  }
+}
 .social_media {
   display: flex;
   justify-content: center;
@@ -530,6 +566,7 @@ h3:last-of-type {
 }
 
 .section_social_media {
+  margin-top: 50px;
   h4 {
     font-family: $family-secondary;
     color: $brownish_grey;
@@ -544,6 +581,7 @@ h3:last-of-type {
     @include for-desktop {
       font-size: 20px;
       line-height: 30px;
+      margin-bottom: 40px;
     }
   }
 }
@@ -552,12 +590,18 @@ h3:last-of-type {
   justify-content: center;
   background: #fff;
 
+  @include for-phone {
+    padding: 0 0 50px !important;
+  }
+
   img {
     padding: 10px;
   }
+
   h4 {
     font-family: $family-secondary;
     color: #000;
+    margin-top: 100px;
     @include for-phone {
       font-size: 20px;
       line-height: 30px;
@@ -573,7 +617,8 @@ h3:last-of-type {
   }
 }
 
-// //FOOTER
-// .footer {
-//   background-color: $white;
-// }
+.logo {
+  @include for-phone {
+    padding-left: 118px;
+  }
+}

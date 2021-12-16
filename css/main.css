@@ -12054,6 +12054,36 @@ h3:last-of-type {
 
 .video__section {
   background-color: #bebebe;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+}
+@media (max-width: 767px) {
+  .video__section {
+    padding-top: 60px;
+    padding-bottom: 25px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .video__section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    gap: 40px;
+  }
+}
+@media (min-width: 1025px) {
+  .video__section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    gap: 40px;
+  }
 }
 .video__section h4 {
   font-family: "Poiret One", cursive;
@@ -12062,22 +12092,31 @@ h3:last-of-type {
 @media (max-width: 767px) {
   .video__section h4 {
     font-size: 20px;
-    line-height: 30px;
+    line-height: 50px;
+    padding-bottom: 30px;
+    padding-top: 10px;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .video__section h4 {
     font-size: 20px;
-    line-height: 30px;
+    line-height: 50px;
+    padding-bottom: 30px;
+    padding-top: 20px;
   }
 }
 @media (min-width: 1025px) {
   .video__section h4 {
     font-size: 20px;
     line-height: 30px;
+    padding-bottom: 30px;
+    padding-top: 25px;
   }
 }
 
+.video_wrapper {
+  width: calc(33%-10px);
+}
 .social_media {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12090,6 +12129,9 @@ h3:last-of-type {
   padding: 10px;
 }
 
+.section_social_media {
+  margin-top: 50px;
+}
 .section_social_media h4 {
   font-family: "Open Sans", sans-serif;
   color: #666;
@@ -12110,6 +12152,7 @@ h3:last-of-type {
   .section_social_media h4 {
     font-size: 20px;
     line-height: 30px;
+    margin-bottom: 40px;
   }
 }
 
@@ -12122,12 +12165,18 @@ h3:last-of-type {
           justify-content: center;
   background: #fff;
 }
+@media (max-width: 767px) {
+  .footer {
+    padding: 0 0 50px !important;
+  }
+}
 .footer img {
   padding: 10px;
 }
 .footer h4 {
   font-family: "Open Sans", sans-serif;
   color: #000;
+  margin-top: 100px;
 }
 @media (max-width: 767px) {
   .footer h4 {
@@ -12145,5 +12194,11 @@ h3:last-of-type {
   .footer h4 {
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .logo {
+    padding-left: 118px;
   }
 }
