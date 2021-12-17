@@ -11607,14 +11607,39 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     margin-bottom: 70px;
   }
 }
-.main__paragraph p,
+.main__paragraph p {
+  font-family: "Open Sans", sans-serif;
+  color: #666;
+}
+@media (max-width: 767px) {
+  .main__paragraph p {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.1px;
+    padding-top: 13px;
+    padding-bottom: 10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .main__paragraph p {
+    font-size: 28px;
+    line-height: 42px;
+    letter-spacing: 0.14px;
+  }
+}
+@media (min-width: 1025px) {
+  .main__paragraph p {
+    font-size: 28px;
+    line-height: 42px;
+    letter-spacing: 0.14px;
+  }
+}
 .main__paragraph span {
   font-family: "Open Sans", sans-serif;
   color: #666;
 }
 @media (max-width: 767px) {
-  .main__paragraph p,
-.main__paragraph span {
+  .main__paragraph span {
     font-size: 20px;
     line-height: 30px;
     letter-spacing: 0.1px;
@@ -11622,16 +11647,14 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  .main__paragraph p,
-.main__paragraph span {
+  .main__paragraph span {
     font-size: 28px;
     line-height: 42px;
     letter-spacing: 0.14px;
   }
 }
 @media (min-width: 1025px) {
-  .main__paragraph p,
-.main__paragraph span {
+  .main__paragraph span {
     font-size: 28px;
     line-height: 42px;
     letter-spacing: 0.14px;
@@ -11650,75 +11673,20 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   padding-bottom: 58px;
   position: relative;
 }
-@media (max-width: 767px) {
-  .grey__section {
-    padding-bottom: 92px;
-    background: url("../_assets/images/dijagonale.svg") no-repeat top right/33%, url("../_assets/images/dijagonale.svg") no-repeat bottom left/33%, #bebebe;
-  }
-}
-@media (min-width: 768px) and (max-width: 1024px) {
-  .grey__section {
-    background: url("../_assets/images/dijagonale.svg") no-repeat top right/33%, url("../_assets/images/dijagonale.svg") no-repeat bottom left/33%, #bebebe;
-  }
-}
-@media (min-width: 1025px) {
-  .grey__section {
-    padding-bottom: 150px;
-    background: url("../_assets/images/dijagonale.svg") no-repeat top right/33%, url("../_assets/images/dijagonale.svg") no-repeat bottom left/33%, #bebebe;
-  }
-}
-@media (min-width: 1025px) and (max-width: 1100px) {
-  .grey__section {
-    background: url("../_assets/images/dijagonale.svg") no-repeat top right/33%, url("../_assets/images/dijagonale.svg") no-repeat bottom left/33%, #bebebe;
-  }
-}
-@media (min-width: 1100px) and (max-width: 1300px) {
-  .grey__section {
-    background: url("../_assets/images/dijagonale.svg") no-repeat top right/33%, url("../_assets/images/dijagonale.svg") no-repeat bottom left/33%, #bebebe;
-  }
-}
-@media (min-width: 1300px) and (max-width: 1400px) {
-  .grey__section {
-    background: url("../_assets/images/dijagonale.svg") no-repeat top right/33%, url("../_assets/images/dijagonale.svg") no-repeat bottom left/33%, #bebebe;
-  }
-}
-@media (min-width: 1400px) and (max-width: 1600px) {
-  .grey__section {
-    background: url("../_assets/images/dijagonale.svg") no-repeat top right/33%, url("../_assets/images/dijagonale.svg") no-repeat bottom left/33%, #bebebe;
-  }
-}
-@media (min-width: 1600px) and (max-width: 1700px) {
-  .grey__section {
-    background: url("../_assets/images/dijagonale.svg") no-repeat top right 15%/24%, url("../_assets/images/dijagonale.svg") no-repeat bottom left 15%/24% #bebebe;
-  }
-}
-@media (min-width: 1700px) and (max-width: 1900px) {
-  .grey__section {
-    background: url("../_assets/images/dijagonale.svg") no-repeat top right/33%, url("../_assets/images/dijagonale.svg") no-repeat bottom left/33%, #bebebe;
-  }
-}
-@media (min-width: 1900px) and (max-width: 2000px) {
-  .grey__section {
-    background: url("../_assets/images/dijagonale.svg") no-repeat top right/30%, url("../_assets/images/dijagonale.svg") no-repeat bottom left/30%, #bebebe;
-  }
-}
-@media (min-width: 2000px) and (max-width: 2200px) {
-  .grey__section {
-    background: url("../_assets/images/dijagonale.svg") no-repeat top right/26%, url("../_assets/images/dijagonale.svg") no-repeat bottom left/26%, #bebebe;
-  }
-}
-@media (min-width: 2200px) {
-  .grey__section {
-    background: url("../_assets/images/dijagonale.svg") no-repeat top right/30%, url("../_assets/images/dijagonale.svg") no-repeat bottom left/30%, #bebebe;
-  }
-}
 .grey__section::before, .grey__section::after {
   content: "";
   display: block;
   width: 527px;
   height: 185px;
   position: absolute;
-  background: url("../_assets/images/video-block-stripes.svg") no-repeat 0 0;
+  background: url("../_assets/images/video-block-stripes.svg") no-repeat 0/100%;
+}
+@media (max-width: 767px) {
+  .grey__section::before, .grey__section::after {
+    width: 360px;
+    height: 105px;
+    background: url("../_assets/images/video-block-stripes.svg") no-repeat 0/100%;
+  }
 }
 .grey__section::before {
   right: 0;
@@ -12209,7 +12177,6 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 @media (max-width: 767px) {
   .video__section h4 {
     font-size: 20px;
-    line-height: 50px;
     padding-bottom: 30px;
     padding-top: 10px;
   }
@@ -12245,6 +12212,11 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   width: calc(48% - 10px);
   position: relative;
   z-index: 1;
+}
+@media (max-width: 767px) {
+  .video_wrapper {
+    width: calc(100% - 10px);
+  }
 }
 @media (min-width: 1400px) {
   .video_wrapper {
