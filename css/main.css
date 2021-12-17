@@ -11695,7 +11695,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 @media (min-width: 1900px) and (max-width: 2000px) {
   .grey__section {
     height: 1400px;
-    background: url("../_assets/images/dijagonale.svg") no-repeat top right/30%, #bebebe;
+    background: url("../_assets/images/dijagonale.svg") no-repeat top right/30%, url("../_assets/images/dijagonale.svg") no-repeat bottom left/30%, #bebebe;
   }
 }
 @media (min-width: 2000px) and (max-width: 2200px) {
@@ -11734,9 +11734,6 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     margin-top: 50px;
     margin-bottom: 70px;
   }
-}
-.grey__section_wrapper .stripes {
-  background: url(../_assets/images/dijagonale.svg) no-repeat top right/100%;
 }
 .grey__section_wrapper h2 {
   font-family: "Poiret One", cursive;

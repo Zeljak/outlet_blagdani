@@ -248,6 +248,7 @@
     height: 1400px;
     background: url("../_assets/images/dijagonale.svg") no-repeat top right /
         30%,
+      url("../_assets/images/dijagonale.svg") no-repeat bottom left / 30%,
       $light_pink;
   }
 
@@ -285,10 +286,6 @@
     margin-right: 200px;
     margin-top: 50px;
     margin-bottom: 70px;
-  }
-
-  .stripes {
-    background: url(../_assets/images/dijagonale.svg) no-repeat top right / 100%;
   }
 
   h2 {
