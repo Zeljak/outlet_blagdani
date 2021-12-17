@@ -11512,7 +11512,6 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 @media (min-width: 1700px) and (max-width: 1800px) {
   .slideshow__text {
     font-size: 200px;
-    bottom: 147px;
   }
 }
 @media (min-width: 1800px) and (max-width: 2000px) {
