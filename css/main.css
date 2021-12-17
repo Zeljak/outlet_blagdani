@@ -11641,61 +11641,73 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 @media (max-width: 767px) {
   .grey__section {
     height: 600px;
+    background: url("../_assets/images/dijagonale.svg") no-repeat top right/33%, url("../_assets/images/dijagonale.svg") no-repeat bottom left/33%, #bebebe;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .grey__section {
-    height: 1000px;
+    height: 927px;
+    background: url("../_assets/images/dijagonale.svg") no-repeat top right/33%, url("../_assets/images/dijagonale.svg") no-repeat bottom left/33%, #bebebe;
   }
 }
 @media (min-width: 1025px) {
   .grey__section {
     height: 1000px;
+    background: url("../_assets/images/dijagonale.svg") no-repeat top right/33%, url("../_assets/images/dijagonale.svg") no-repeat bottom left/33%, #bebebe;
   }
 }
 @media (min-width: 1025px) and (max-width: 1100px) {
   .grey__section {
     height: 900px;
+    background: url("../_assets/images/dijagonale.svg") no-repeat top right/33%, url("../_assets/images/dijagonale.svg") no-repeat bottom left/33%, #bebebe;
   }
 }
 @media (min-width: 1100px) and (max-width: 1300px) {
   .grey__section {
     height: 900px;
+    background: url("../_assets/images/dijagonale.svg") no-repeat top right/33%, url("../_assets/images/dijagonale.svg") no-repeat bottom left/33%, #bebebe;
   }
 }
 @media (min-width: 1300px) and (max-width: 1400px) {
   .grey__section {
     height: 1000px;
+    background: url("../_assets/images/dijagonale.svg") no-repeat top right/33%, url("../_assets/images/dijagonale.svg") no-repeat bottom left/33%, #bebebe;
   }
 }
 @media (min-width: 1400px) and (max-width: 1600px) {
   .grey__section {
     height: 1100px;
+    background: url("../_assets/images/dijagonale.svg") no-repeat top right/33%, url("../_assets/images/dijagonale.svg") no-repeat bottom left/33%, #bebebe;
   }
 }
 @media (min-width: 1600px) and (max-width: 1700px) {
   .grey__section {
     height: 1300px;
+    background: url("../_assets/images/dijagonale.svg") no-repeat top right 15%/24%, url("../_assets/images/dijagonale.svg") no-repeat bottom left 15%/24% #bebebe;
   }
 }
 @media (min-width: 1700px) and (max-width: 1900px) {
   .grey__section {
     height: 1300px;
+    background: url("../_assets/images/dijagonale.svg") no-repeat top right/33%, url("../_assets/images/dijagonale.svg") no-repeat bottom left/33%, #bebebe;
   }
 }
 @media (min-width: 1900px) and (max-width: 2000px) {
   .grey__section {
     height: 1400px;
+    background: url("../_assets/images/dijagonale.svg") no-repeat top right/30%, #bebebe;
   }
 }
 @media (min-width: 2000px) and (max-width: 2200px) {
   .grey__section {
     height: 1500px;
+    background: url("../_assets/images/dijagonale.svg") no-repeat top right/26%, url("../_assets/images/dijagonale.svg") no-repeat bottom left/26%, #bebebe;
   }
 }
 @media (min-width: 2200px) {
   .grey__section {
     height: 1800px;
+    background: url("../_assets/images/dijagonale.svg") no-repeat top right/30%, url("../_assets/images/dijagonale.svg") no-repeat bottom left/30%, #bebebe;
   }
 }
 
@@ -12029,24 +12041,8 @@ h3:last-of-type {
   width: 140px;
   height: 42px;
   text-align: center;
-}
-@media (max-width: 767px) {
-  .btn {
-    font-size: 20px;
-    line-height: 30px;
-  }
-}
-@media (min-width: 768px) and (max-width: 1024px) {
-  .btn {
-    font-size: 20px;
-    line-height: 30px;
-  }
-}
-@media (min-width: 1025px) {
-  .btn {
-    font-size: 20px;
-    line-height: 30px;
-  }
+  font-size: 20px;
+  line-height: 33px;
 }
 .btn:hover {
   background-color: #af8600;
