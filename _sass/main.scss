@@ -40,7 +40,6 @@
   }
   @include for-tablet {
     font-size: 99px;
-
     letter-spacing: 0.5px;
   }
 
@@ -55,13 +54,17 @@
   }
   @media (min-width: 1400px) and (max-width: 1700px) {
     font-size: 200px;
-
     letter-spacing: 1px;
     // bottom: 120px;
   }
-  @media (min-width: 1700px) and (max-width: 2000px) {
+  @media (min-width: 1700px) and (max-width: 1800px) {
     font-size: 200px;
-    bottom: 194px;
+    bottom: 147px;
+  }
+
+  @media (min-width: 1800px) and (max-width: 2000px) {
+    font-size: 200px;
+    bottom: 147px;
   }
 }
 
@@ -347,6 +350,7 @@
     @include for-phone {
       font-size: 50px;
       line-height: 50px;
+      padding-bottom: 34px;
     }
     @include for-tablet {
       font-size: 40px;
@@ -374,6 +378,25 @@
       font-size: 40px;
       line-height: 80px;
     }
+  }
+
+  .ovog_bozica {
+    @include for-phone {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    @include for-tablet {
+      padding-top: 50px;
+    }
+
+    @include for-desktop {
+      padding-top: 50px;
+    }
+  }
+
+  .uzivaj {
+    padding-bottom: 50px;
   }
 }
 

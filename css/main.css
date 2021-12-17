@@ -11509,10 +11509,16 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     letter-spacing: 1px;
   }
 }
-@media (min-width: 1700px) and (max-width: 2000px) {
+@media (min-width: 1700px) and (max-width: 1800px) {
   .slideshow__text {
     font-size: 200px;
-    bottom: 194px;
+    bottom: 147px;
+  }
+}
+@media (min-width: 1800px) and (max-width: 2000px) {
+  .slideshow__text {
+    font-size: 200px;
+    bottom: 147px;
   }
 }
 
@@ -11789,6 +11795,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   .grey__section_wrapper h2 {
     font-size: 50px;
     line-height: 50px;
+    padding-bottom: 34px;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -11824,6 +11831,25 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     font-size: 40px;
     line-height: 80px;
   }
+}
+@media (max-width: 767px) {
+  .grey__section_wrapper .ovog_bozica {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .grey__section_wrapper .ovog_bozica {
+    padding-top: 50px;
+  }
+}
+@media (min-width: 1025px) {
+  .grey__section_wrapper .ovog_bozica {
+    padding-top: 50px;
+  }
+}
+.grey__section_wrapper .uzivaj {
+  padding-bottom: 50px;
 }
 
 .embed-container {
