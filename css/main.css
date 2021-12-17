@@ -11470,6 +11470,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   width: 100%;
   position: absolute;
   bottom: 0;
+  letter-spacing: 1px;
 }
 @media (min-width: 1920px) {
   .slideshow__text {
@@ -11488,37 +11489,19 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     letter-spacing: 0.5px;
   }
 }
-@media (min-width: 1025px) and (max-width: 1100px) {
+@media (min-width: 1025px) and (max-width: 1213px) {
   .slideshow__text {
     font-size: 150px;
   }
 }
-@media (min-width: 1100px) and (max-width: 1214px) {
-  .slideshow__text {
-    font-size: 150px;
-  }
-}
-@media (min-width: 1214px) and (max-width: 1400px) {
+@media (min-width: 1214px) and (max-width: 1399px) {
   .slideshow__text {
     font-size: 170px;
   }
 }
-@media (min-width: 1400px) and (max-width: 1700px) {
+@media (min-width: 1400px) {
   .slideshow__text {
     font-size: 200px;
-    letter-spacing: 1px;
-  }
-}
-@media (min-width: 1700px) and (max-width: 1800px) {
-  .slideshow__text {
-    font-size: 200px;
-    bottom: 147px;
-  }
-}
-@media (min-width: 1800px) and (max-width: 2000px) {
-  .slideshow__text {
-    font-size: 200px;
-    bottom: 147px;
   }
 }
 
@@ -11871,6 +11854,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 }
 
 .artist {
+  overflow: hidden;
   width: 100%;
   max-width: 1117px;
   margin: 30px auto 50px;
