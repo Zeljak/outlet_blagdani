@@ -28,9 +28,6 @@
   bottom: 0;
   letter-spacing: 1px;
 
-  // font-size: 200px;
-  // line-height: 42px;
-
   @media (min-width: 1920px) {
     font-size: 200px;
   }
@@ -60,25 +57,21 @@
   }
 }
 
-.slideshow__container {
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
+// .slideshow__container {
+//   width: 100vw;
+//   height: auto;
+//   overflow: hidden;
 
-  @media (max-width: 1777px) {
-    height: auto;
-  }
-}
+//   @media (max-width: 1777px) {
+//     height: auto;
+//   }
+// }
 
 .slideshow__container {
   position: relative;
   margin: 0;
   padding: 0;
-  height: 100vh;
-
-  @media (max-width: 1777px) {
-    height: auto;
-  }
+  height: auto;
 
   img {
     width: 100%;
@@ -153,6 +146,11 @@
     margin-bottom: 70px;
   }
   @include for-desktop {
+    margin-top: 50px;
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: 1777px) {
     margin-top: 50px;
     margin-bottom: 70px;
   }
@@ -417,12 +415,18 @@
     @include for-desktop {
       padding-top: 65px;
     }
+    @media (min-width: 1920px) {
+      padding-top: 100px;
+    }
   }
 
   .uzivaj {
     padding-bottom: 50px;
 
     @include for-tablet {
+      padding-bottom: 80px;
+    }
+    @media (min-width: 1920px) {
       padding-bottom: 80px;
     }
   }
@@ -477,12 +481,20 @@
 /* Flex columns */
 .flex-columns.flex-reverse .row {
   flex-direction: row-reverse;
+
+  @include for-desktop {
+    margin-bottom: 40px;
+  }
 }
 .flex-columns .row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
+
+  @include for-desktop {
+    margin-bottom: 40px;
+  }
 }
 
 .flex-columns .column {
@@ -504,9 +516,9 @@
     padding-right: 49px;
   }
 
-  @media (min-width: 1023px) {
-    padding-right: 25px;
-    padding-left: 0;
+  @media (min-width: 1023px) and (max-width: 1130px) {
+    padding-right: 10px;
+    padding-left: 40px;
   }
 
   @media (min-width: 1920px) {
@@ -527,9 +539,9 @@
     padding-right: 49px;
   }
 
-  @media (min-width: 1024px) {
-    padding-left: 25px;
-    padding-right: 0;
+  @media (min-width: 1023px) and (max-width: 1130px) {
+    padding-right: 10px;
+    padding-left: 30px;
   }
 
   @media (min-width: 1920px) {
@@ -537,9 +549,9 @@
   }
 }
 .flex-reverse .column-1 {
-  @media (min-width: 1024px) {
-    padding-right: 0;
-    padding-left: 25px;
+  @media (min-width: 1023px) and (max-width: 1130px) {
+    padding-right: 40px;
+    padding-left: 10px;
   }
 
   @media (min-width: 1920px) {
@@ -549,9 +561,9 @@
 }
 
 .flex-reverse .column-2 {
-  @media (min-width: 1024px) {
-    padding-left: 0;
-    padding-right: 25px;
+  @media (min-width: 1023px) and (max-width: 1130px) {
+    padding-right: 30px;
+    padding-left: 10px;
     text-align: right;
 
     .btn {
@@ -582,7 +594,7 @@
   @include for-desktop {
     font-size: 30px;
     line-height: 13px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
 
   @media (min-width: 1408px) and (max-width: 1600px) {
@@ -613,9 +625,15 @@
     padding-top: 50px;
   }
   @include for-desktop {
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: 1920px) {
     font-size: 60px;
     line-height: 65px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 
   &:hover {
@@ -640,7 +658,7 @@
   @include for-desktop {
     font-size: 20px;
     line-height: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 24px;
   }
 
   @media (min-width: 1408px) and (max-width: 1900px) {
@@ -715,8 +733,90 @@
       height: 99px;
       bottom: -44px;
     }
+
+    @include for-desktop {
+      background: url("../_assets/images/dijagonale.svg") no-repeat bottom right /
+        100%;
+      width: 358px;
+      height: 133px;
+      bottom: -44px;
+      left: 177px;
+    }
   }
+
+  // &:nth-child(odd) {
+  //   content: "";
+  //   display: block;
+  //   width: 527px;
+  //   height: 185px;
+  //   position: absolute;
+  //   right: 0;
+  //   bottom: 0;
+  //   background: url("../_assets/images/dijagonale.svg") no-repeat bottom left /
+  //     90%;
+
+  //   @include for-phone {
+  //     width: 199px;
+  //     height: 190px;
+  //     bottom: -24px;
+  //   }
+
+  //   @include for-tablet {
+  //     background: url("../_assets/images/dijagonale.svg") no-repeat bottom left /
+  //       100%;
+  //     width: 413px;
+  //     height: 99px;
+  //     bottom: -44px;
+  //   }
+
+  //   @include for-desktop {
+  //     background: url("../_assets/images/dijagonale.svg") no-repeat bottom left /
+  //       100%;
+  //     width: 358px;
+  //     height: 133px;
+  //     bottom: -44px;
+  //     left: 177px;
+  //   }
+  // }
 }
+
+// .flex-reverse .column-1 {
+//   position: relative;
+//   &::after {
+//     content: "";
+//     display: block;
+//     width: 527px;
+//     height: 185px;
+//     position: absolute;
+//     right: 0;
+//     bottom: 0;
+//     background: url("../_assets/images/dijagonale.svg") no-repeat bottom left /
+//       90%;
+
+//     @include for-phone {
+//       width: 199px;
+//       height: 190px;
+//       bottom: -24px;
+//     }
+
+//     @include for-tablet {
+//       background: url("../_assets/images/dijagonale.svg") no-repeat bottom left /
+//         100%;
+//       width: 413px;
+//       height: 99px;
+//       bottom: -44px;
+//     }
+
+//     @include for-desktop {
+//       background: url("../_assets/images/dijagonale.svg") no-repeat bottom left /
+//         100%;
+//       width: 358px;
+//       height: 133px;
+//       bottom: -44px;
+//       left: 177px;
+//     }
+//   }
+// }
 
 .video__section {
   background-color: $light_pink;
@@ -733,6 +833,7 @@
   @media (min-width: 1024px) {
     padding-left: 58px;
     padding-right: 58px;
+    margin-top: 150px;
   }
 
   @media (min-width: 1920px) {
@@ -772,7 +873,6 @@
     }
     @include for-desktop {
       font-size: 20px;
-      line-height: 30px;
       padding-bottom: 30px;
       padding-top: 25px;
     }
@@ -854,9 +954,10 @@
       margin-bottom: 50px;
     }
     @include for-desktop {
-      font-size: 20px;
+      font-size: 30px;
       line-height: 30px;
-      margin-bottom: 40px;
+      margin-bottom: 50px;
+      margin-top: 150px;
     }
   }
 
