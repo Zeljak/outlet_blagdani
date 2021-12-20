@@ -44,6 +44,10 @@
     letter-spacing: 0.5px;
   }
 
+  @include for-desktop {
+    font-size: 132px;
+  }
+
   @media (min-width: 1025px) and (max-width: 1213px) {
     font-size: 150px;
   }
@@ -146,7 +150,7 @@
   }
   @include for-tablet {
     margin-top: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
   }
   @include for-desktop {
     margin-top: 50px;
@@ -168,11 +172,13 @@
       font-size: 28px;
       line-height: 42px;
       letter-spacing: 0.14px;
+      margin-top: 66px;
     }
     @include for-desktop {
       font-size: 28px;
       line-height: 42px;
       letter-spacing: 0.14px;
+      padding-top: 20px;
     }
   }
 
@@ -316,6 +322,10 @@
     right: 0;
     top: 0;
 
+    @include for-phone {
+      height: 130px;
+    }
+
     @media (min-width: 2200px) {
       right: auto;
       left: 50%;
@@ -364,12 +374,13 @@
       padding-bottom: 34px;
     }
     @include for-tablet {
-      font-size: 40px;
-      line-height: 80px;
+      font-size: 90px;
+      line-height: 105px;
     }
     @include for-desktop {
-      font-size: 40px;
+      font-size: 92px;
       line-height: 80px;
+      padding-bottom: 20px;
     }
   }
 
@@ -388,6 +399,7 @@
     @include for-desktop {
       font-size: 40px;
       line-height: 80px;
+      margin-bottom: 20px;
     }
   }
 
@@ -398,16 +410,22 @@
     }
 
     @include for-tablet {
-      padding-top: 50px;
+      padding-top: 80px;
+      padding-bottom: 20px;
     }
 
     @include for-desktop {
-      padding-top: 50px;
+      padding-top: 65px;
+      padding-bottom: 20px;
     }
   }
 
   .uzivaj {
     padding-bottom: 50px;
+
+    @include for-tablet {
+      padding-bottom: 80px;
+    }
   }
 }
 
@@ -433,13 +451,17 @@
   max-width: 1117px;
   margin: 30px auto 50px;
 
+  @include for-phone {
+    margin-top: 80px;
+  }
+
   @include for-tablet {
     margin-top: 30px;
     margin-bottom: 50px;
   }
 
   @include for-desktop {
-    margin-top: 50px;
+    margin-top: 100px;
     margin-bottom: 70px;
   }
 }
@@ -583,11 +605,13 @@
     font-size: 40px;
     line-height: 40px;
     margin-bottom: 20px;
+    padding-top: 30px;
   }
   @include for-tablet {
     font-size: 50px;
     line-height: 50px;
     margin-bottom: 30px;
+    padding-top: 50px;
   }
   @include for-desktop {
     font-size: 60px;
@@ -607,11 +631,12 @@
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 30px;
+    padding-top: 10px;
   }
   @include for-tablet {
     font-size: 20px;
     line-height: 30px;
-    margin-bottom: 40px;
+    padding-bottom: 27px;
   }
   @include for-desktop {
     font-size: 20px;
@@ -663,20 +688,40 @@
   &:hover {
     background-color: #af8600;
   }
+
+  @include for-tablet {
+    margin-bottom: 30px;
+  }
 }
 
-// .ana_tevsic {
-//   &::after {
-//     content: "";
-//     display: block;
-//     width: 527px;
-//     height: 185px;
-//     position: absolute;
-//     right: 0;
-//     bottom: 0;
-//     background: url("../_assets/images/dijagonale.svg") no-repeat 0 0;
-//   }
-// }
+.column-1 {
+  position: relative;
+  &::after {
+    content: "";
+    display: block;
+    width: 527px;
+    height: 185px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: url("../_assets/images/dijagonale.svg") no-repeat bottom right /
+      90%;
+
+    @include for-phone {
+      width: 199px;
+      height: 190px;
+      bottom: -24px;
+    }
+
+    @include for-tablet {
+      background: url("../_assets/images/dijagonale.svg") no-repeat bottom right /
+        100%;
+      width: 413px;
+      height: 99px;
+      bottom: -44px;
+    }
+  }
+}
 
 .video__section {
   background-color: $light_pink;
@@ -703,6 +748,8 @@
   @include for-phone {
     padding-top: 60px;
     padding-bottom: 25px;
+    margin-bottom: 120px;
+    margin-top: 100px;
   }
   @include for-tablet {
     padding-top: 100px;
@@ -745,6 +792,13 @@
     right: 0;
     bottom: 0;
     background: url("../_assets/images/video-block-stripes.svg") no-repeat 0 0;
+
+    @include for-phone {
+      background: url("../_assets/images/video-block-stripes.svg") no-repeat 0 /
+        100%;
+      width: 319px;
+      height: 111px;
+    }
   }
 }
 
@@ -754,7 +808,7 @@
   z-index: 1;
 
   @include for-phone {
-    width: calc(100% - 10px);
+    width: calc(100% - 5px);
   }
 
   @media (min-width: 1400px) {
@@ -781,6 +835,11 @@
 
   img {
     padding: 10px;
+    @include for-phone {
+      padding: 15px;
+      width: 90%;
+      height: 90%;
+    }
   }
 }
 
@@ -791,7 +850,7 @@
     color: $brownish_grey;
     @include for-phone {
       font-size: 20px;
-      line-height: 30px;
+      line-height: 40px;
     }
     @include for-tablet {
       font-size: 20px;

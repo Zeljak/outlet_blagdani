@@ -11483,10 +11483,15 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     letter-spacing: 0.23px;
   }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .slideshow__text {
     font-size: 99px;
     letter-spacing: 0.5px;
+  }
+}
+@media (min-width: 1024px) {
+  .slideshow__text {
+    font-size: 132px;
   }
 }
 @media (min-width: 1025px) and (max-width: 1213px) {
@@ -11595,13 +11600,13 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     margin-bottom: 50px;
   }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .main__paragraph {
     margin-top: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
   }
 }
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
   .main__paragraph {
     margin-top: 50px;
     margin-bottom: 70px;
@@ -11620,18 +11625,20 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     padding-bottom: 10px;
   }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .main__paragraph p {
     font-size: 28px;
     line-height: 42px;
     letter-spacing: 0.14px;
+    margin-top: 66px;
   }
 }
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
   .main__paragraph p {
     font-size: 28px;
     line-height: 42px;
     letter-spacing: 0.14px;
+    padding-top: 20px;
   }
 }
 .main__paragraph span {
@@ -11646,14 +11653,14 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     padding-top: 13px;
   }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .main__paragraph span {
     font-size: 28px;
     line-height: 42px;
     letter-spacing: 0.14px;
   }
 }
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
   .main__paragraph span {
     font-size: 28px;
     line-height: 42px;
@@ -11692,6 +11699,11 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   right: 0;
   top: 0;
 }
+@media (max-width: 767px) {
+  .grey__section::before {
+    height: 130px;
+  }
+}
 @media (min-width: 2200px) {
   .grey__section::before {
     right: auto;
@@ -11726,13 +11738,13 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     margin-bottom: 50px;
   }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .grey__section_wrapper {
     margin-top: 30px;
     margin-bottom: 50px;
   }
 }
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
   .grey__section_wrapper {
     margin-top: 50px;
     margin-bottom: 70px;
@@ -11749,16 +11761,17 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     padding-bottom: 34px;
   }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .grey__section_wrapper h2 {
-    font-size: 40px;
-    line-height: 80px;
+    font-size: 90px;
+    line-height: 105px;
   }
 }
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
   .grey__section_wrapper h2 {
-    font-size: 40px;
+    font-size: 92px;
     line-height: 80px;
+    padding-bottom: 20px;
   }
 }
 .grey__section_wrapper h3 {
@@ -11771,16 +11784,17 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     line-height: 40px;
   }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .grey__section_wrapper h3 {
     font-size: 40px;
     line-height: 80px;
   }
 }
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
   .grey__section_wrapper h3 {
     font-size: 40px;
     line-height: 80px;
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 767px) {
@@ -11789,18 +11803,25 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     padding-bottom: 50px;
   }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .grey__section_wrapper .ovog_bozica {
-    padding-top: 50px;
+    padding-top: 80px;
+    padding-bottom: 20px;
   }
 }
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
   .grey__section_wrapper .ovog_bozica {
-    padding-top: 50px;
+    padding-top: 65px;
+    padding-bottom: 20px;
   }
 }
 .grey__section_wrapper .uzivaj {
   padding-bottom: 50px;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .grey__section_wrapper .uzivaj {
+    padding-bottom: 80px;
+  }
 }
 
 .embed-container {
@@ -11827,15 +11848,20 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   max-width: 1117px;
   margin: 30px auto 50px;
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (max-width: 767px) {
+  .artist {
+    margin-top: 80px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
   .artist {
     margin-top: 30px;
     margin-bottom: 50px;
   }
 }
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
   .artist {
-    margin-top: 50px;
+    margin-top: 100px;
     margin-bottom: 70px;
   }
 }
@@ -11988,14 +12014,14 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     margin-bottom: 10px;
   }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .flex-columns h2 {
     font-size: 30px;
     line-height: 30px;
     margin-bottom: 20px;
   }
 }
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
   .flex-columns h2 {
     font-size: 30px;
     line-height: 13px;
@@ -12026,16 +12052,18 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     font-size: 40px;
     line-height: 40px;
     margin-bottom: 20px;
+    padding-top: 30px;
   }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .flex-columns h4 {
     font-size: 50px;
     line-height: 50px;
     margin-bottom: 30px;
+    padding-top: 50px;
   }
 }
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
   .flex-columns h4 {
     font-size: 60px;
     line-height: 65px;
@@ -12055,16 +12083,17 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 30px;
+    padding-top: 10px;
   }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .flex-columns p {
     font-size: 20px;
     line-height: 30px;
-    margin-bottom: 40px;
+    padding-bottom: 27px;
   }
 }
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
   .flex-columns p {
     font-size: 20px;
     line-height: 30px;
@@ -12122,6 +12151,40 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 .btn:hover {
   background-color: #af8600;
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  .btn {
+    margin-bottom: 30px;
+  }
+}
+
+.column-1 {
+  position: relative;
+}
+.column-1::after {
+  content: "";
+  display: block;
+  width: 527px;
+  height: 185px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: url("../_assets/images/dijagonale.svg") no-repeat bottom right/90%;
+}
+@media (max-width: 767px) {
+  .column-1::after {
+    width: 199px;
+    height: 190px;
+    bottom: -24px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .column-1::after {
+    background: url("../_assets/images/dijagonale.svg") no-repeat bottom right/100%;
+    width: 413px;
+    height: 99px;
+    bottom: -44px;
+  }
+}
 
 .video__section {
   background-color: #bebebe;
@@ -12155,15 +12218,17 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   .video__section {
     padding-top: 60px;
     padding-bottom: 25px;
+    margin-bottom: 120px;
+    margin-top: 100px;
   }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .video__section {
     padding-top: 100px;
     padding-bottom: 100px;
   }
 }
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
   .video__section {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -12181,7 +12246,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     padding-top: 10px;
   }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .video__section h4 {
     font-size: 20px;
     line-height: 50px;
@@ -12189,7 +12254,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     padding-top: 20px;
   }
 }
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
   .video__section h4 {
     font-size: 20px;
     line-height: 30px;
@@ -12207,6 +12272,13 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   bottom: 0;
   background: url("../_assets/images/video-block-stripes.svg") no-repeat 0 0;
 }
+@media (max-width: 767px) {
+  .video__section::after {
+    background: url("../_assets/images/video-block-stripes.svg") no-repeat 0/100%;
+    width: 319px;
+    height: 111px;
+  }
+}
 
 .video_wrapper {
   width: calc(48% - 10px);
@@ -12215,7 +12287,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 }
 @media (max-width: 767px) {
   .video_wrapper {
-    width: calc(100% - 10px);
+    width: calc(100% - 5px);
   }
 }
 @media (min-width: 1400px) {
@@ -12248,6 +12320,13 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 .social_media img {
   padding: 10px;
 }
+@media (max-width: 767px) {
+  .social_media img {
+    padding: 15px;
+    width: 90%;
+    height: 90%;
+  }
+}
 
 .section_social_media {
   margin-top: 50px;
@@ -12259,16 +12338,16 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 @media (max-width: 767px) {
   .section_social_media h4 {
     font-size: 20px;
-    line-height: 30px;
+    line-height: 40px;
   }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .section_social_media h4 {
     font-size: 20px;
     line-height: 30px;
   }
 }
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
   .section_social_media h4 {
     font-size: 20px;
     line-height: 30px;
@@ -12304,13 +12383,13 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     line-height: 30px;
   }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .footer h4 {
     font-size: 20px;
     line-height: 30px;
   }
 }
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
   .footer h4 {
     font-size: 20px;
     line-height: 30px;
