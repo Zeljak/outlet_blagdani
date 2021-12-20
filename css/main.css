@@ -11945,7 +11945,8 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 }
 @media (min-width: 1920px) {
   .flex-columns .column-1 {
-    padding-right: 30px;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 
@@ -11975,9 +11976,16 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     padding-left: 30px;
   }
 }
-@media (min-width: 1920px) {
+@media (min-width: 1440px) {
   .flex-columns .column-2 {
     padding-left: 30px;
+    padding-right: 0;
+  }
+}
+@media (min-width: 1920px) {
+  .flex-columns .column-2 {
+    padding-left: 73px;
+    padding-right: 0;
   }
 }
 
@@ -11987,14 +11995,14 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     padding-left: 10px;
   }
 }
-@media (min-width: 1920px) {
+@media (min-width: 1440px) {
   .flex-reverse .column-1 {
     padding-right: 0;
     padding-left: 30px;
   }
 }
 
-@media (min-width: 1023px) and (max-width: 1130px) {
+@media (min-width: 1023px) and (max-width: 1920px) {
   .flex-reverse .column-2 {
     padding-right: 30px;
     padding-left: 10px;
@@ -12005,10 +12013,21 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
         align-self: flex-end;
   }
 }
-@media (min-width: 1920px) {
+@media (min-width: 1440px) {
   .flex-reverse .column-2 {
     padding-left: 0;
     padding-right: 30px;
+    text-align: right;
+  }
+  .flex-reverse .column-2 .btn {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+}
+@media (min-width: 1920px) {
+  .flex-reverse .column-2 {
+    padding-right: 73px;
+    padding-left: 0;
   }
 }
 
@@ -12046,7 +12065,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 }
 @media (min-width: 1600px) {
   .flex-columns h2 {
-    font-size: 20px;
+    font-size: 30px;
     line-height: 30px;
     margin-bottom: 30px;
   }
@@ -12203,6 +12222,15 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     height: 133px;
     bottom: -44px;
     left: 177px;
+  }
+}
+@media (min-width: 1920px) {
+  .column-1::after {
+    background: url("../_assets/images/dijagonale.svg") no-repeat bottom right/100%;
+    width: 358px;
+    height: 133px;
+    bottom: -44px;
+    left: 223px;
   }
 }
 

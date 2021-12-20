@@ -522,7 +522,8 @@
   }
 
   @media (min-width: 1920px) {
-    padding-right: 30px;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 
@@ -544,8 +545,14 @@
     padding-left: 30px;
   }
 
-  @media (min-width: 1920px) {
+  @media (min-width: 1440px) {
     padding-left: 30px;
+    padding-right: 0;
+  }
+
+  @media (min-width: 1920px) {
+    padding-left: 73px;
+    padding-right: 0;
   }
 }
 .flex-reverse .column-1 {
@@ -554,14 +561,14 @@
     padding-left: 10px;
   }
 
-  @media (min-width: 1920px) {
+  @media (min-width: 1440px) {
     padding-right: 0;
     padding-left: 30px;
   }
 }
 
 .flex-reverse .column-2 {
-  @media (min-width: 1023px) and (max-width: 1130px) {
+  @media (min-width: 1023px) and (max-width: 1920px) {
     padding-right: 30px;
     padding-left: 10px;
     text-align: right;
@@ -571,9 +578,19 @@
     }
   }
 
-  @media (min-width: 1920px) {
+  @media (min-width: 1440px) {
     padding-left: 0;
     padding-right: 30px;
+    text-align: right;
+
+    .btn {
+      align-self: flex-end;
+    }
+  }
+
+  @media (min-width: 1920px) {
+    padding-right: 73px;
+    padding-left: 0;
   }
 }
 
@@ -603,7 +620,7 @@
     margin-bottom: 20px;
   }
   @media (min-width: 1600px) {
-    font-size: 20px;
+    font-size: 30px;
     line-height: 30px;
     margin-bottom: 30px;
   }
@@ -741,6 +758,15 @@
       height: 133px;
       bottom: -44px;
       left: 177px;
+    }
+
+    @media (min-width: 1920px) {
+      background: url("../_assets/images/dijagonale.svg") no-repeat bottom right /
+        100%;
+      width: 358px;
+      height: 133px;
+      bottom: -44px;
+      left: 223px;
     }
   }
 
