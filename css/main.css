@@ -11855,7 +11855,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .artist {
-    margin-top: 30px;
+    margin-top: 120px;
     margin-bottom: 50px;
   }
 }
@@ -12151,11 +12151,6 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 .btn:hover {
   background-color: #af8600;
 }
-@media (min-width: 768px) and (max-width: 1023px) {
-  .btn {
-    margin-bottom: 30px;
-  }
-}
 
 .column-1 {
   position: relative;
@@ -12343,8 +12338,10 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .section_social_media h4 {
-    font-size: 20px;
+    font-size: 30px;
     line-height: 30px;
+    margin-top: 120px;
+    margin-bottom: 50px;
   }
 }
 @media (min-width: 1024px) {
@@ -12353,6 +12350,9 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     line-height: 30px;
     margin-bottom: 40px;
   }
+}
+.section_social_media img {
+  padding: 20px;
 }
 
 .footer {
