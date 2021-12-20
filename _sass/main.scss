@@ -57,16 +57,6 @@
   }
 }
 
-// .slideshow__container {
-//   width: 100vw;
-//   height: auto;
-//   overflow: hidden;
-
-//   @media (max-width: 1777px) {
-//     height: auto;
-//   }
-// }
-
 .slideshow__container {
   position: relative;
   margin: 0;
@@ -729,120 +719,59 @@
   &::after {
     content: "";
     display: block;
-    width: 527px;
-    height: 185px;
+    width: 180px;
+    height: 60px;
     position: absolute;
     right: 0;
-    bottom: 0;
-    background: url("../_assets/images/dijagonale.svg") no-repeat bottom right /
-      90%;
-
-    @include for-phone {
-      width: 199px;
-      height: 190px;
-      bottom: -24px;
-    }
+    bottom: -23px;
+    background: url("../_assets/images/dijagonale.svg") no-repeat center center / 100%;
 
     @include for-tablet {
-      background: url("../_assets/images/dijagonale.svg") no-repeat bottom right /
-        100%;
-      width: 413px;
-      height: 99px;
-      bottom: -44px;
+      width: 300px;
+      height: 110px;
+      right: 49px;
+      bottom: -42px;
     }
 
     @include for-desktop {
-      background: url("../_assets/images/dijagonale.svg") no-repeat bottom right /
-        100%;
-      width: 358px;
-      height: 133px;
-      bottom: -44px;
-      left: 177px;
+      width: 301px;
+      height: 106px;
+      right: -26px;
+      bottom: -48px;
+    }
+
+    @media (min-width: 1130px) {
+      right: 11px;
     }
 
     @media (min-width: 1920px) {
-      background: url("../_assets/images/dijagonale.svg") no-repeat bottom right /
-        100%;
-      width: 358px;
-      height: 133px;
-      bottom: -44px;
-      left: 223px;
+      right: -39px;
     }
   }
-
-  // &:nth-child(odd) {
-  //   content: "";
-  //   display: block;
-  //   width: 527px;
-  //   height: 185px;
-  //   position: absolute;
-  //   right: 0;
-  //   bottom: 0;
-  //   background: url("../_assets/images/dijagonale.svg") no-repeat bottom left /
-  //     90%;
-
-  //   @include for-phone {
-  //     width: 199px;
-  //     height: 190px;
-  //     bottom: -24px;
-  //   }
-
-  //   @include for-tablet {
-  //     background: url("../_assets/images/dijagonale.svg") no-repeat bottom left /
-  //       100%;
-  //     width: 413px;
-  //     height: 99px;
-  //     bottom: -44px;
-  //   }
-
-  //   @include for-desktop {
-  //     background: url("../_assets/images/dijagonale.svg") no-repeat bottom left /
-  //       100%;
-  //     width: 358px;
-  //     height: 133px;
-  //     bottom: -44px;
-  //     left: 177px;
-  //   }
-  // }
 }
 
-// .flex-reverse .column-1 {
-//   position: relative;
-//   &::after {
-//     content: "";
-//     display: block;
-//     width: 527px;
-//     height: 185px;
-//     position: absolute;
-//     right: 0;
-//     bottom: 0;
-//     background: url("../_assets/images/dijagonale.svg") no-repeat bottom left /
-//       90%;
+.flex-reverse {
+  .column-1::after {
+    right: auto;
+    left: 0;
+    
+    @include for-tablet {
+      left: 49px;
+    }
 
-//     @include for-phone {
-//       width: 199px;
-//       height: 190px;
-//       bottom: -24px;
-//     }
+    @include for-desktop {
+      left: -26px;
+    }
 
-//     @include for-tablet {
-//       background: url("../_assets/images/dijagonale.svg") no-repeat bottom left /
-//         100%;
-//       width: 413px;
-//       height: 99px;
-//       bottom: -44px;
-//     }
+    @media (min-width: 1130px) {
+      left: -15px;
+    }
 
-//     @include for-desktop {
-//       background: url("../_assets/images/dijagonale.svg") no-repeat bottom left /
-//         100%;
-//       width: 358px;
-//       height: 133px;
-//       bottom: -44px;
-//       left: 177px;
-//     }
-//   }
-// }
+    @media (min-width: 1920px) {
+      left: -18px;
+    }
+  }
+}
 
 .video__section {
   background-color: $light_pink;
